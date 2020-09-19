@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="Free Unique Article Generator - Generate Articles from YouTube Videos on only one click">
+      <meta name="keywords" content="Free Unique Article Generator,free article generator,article generator,free article generator,unique article generator,Youtube article generator,free unique article generator online,article generator,best free article generator,web beast,webbeast,articles generator,unique article,article generator free,article generator online,content generator tools free,unique article generator online,free article,how to get unique articles for free,free website content generator,unique content generator,Youtube article generator tool,freearticlegenerator">
+      <meta name="author" content="Dmtechnolab">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+      <title>Free Unique Article Generator</title>
+      <script type="text/javascript" src="./locales.js"></script>
+      <script type="text/javascript" src="./youtube.js"></script>
+      <link rel="stylesheet" href="./style.css" type="text/css"/>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="http://code.jquery.com/jquery-1.5.1.min.js"></script>
+      <style>
+         .alert{
+         display: none;
+         }
+         .form-control:focus {
+         border-color: #FF0000;
+         box-shadow: 0 0 0 0.2rem rgba(300,0,0);
+         } 
+         .btn{
+         margin:5px;
+         font-size:13px;
+         }
+      </style>
+      <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+      <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+      <link rel="manifest" href="favicon/manifest.json">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+      <meta name="theme-color" content="#ffffff">
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144085612-20"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         
+         gtag('config', 'UA-144085612-20');
+      </script>
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+         <!-- Brand -->
+         <img style="width:50px; height:50px; padding:8px;" src="feather.png" alt="Free Article Generator">
+         <a class="navbar-brand" href="index.html">Home</a>
+         <!-- Toggler/collapsibe Button -->
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <!-- Navbar links -->
+         <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+               <li class="nav-item">
+                  <a class="nav-link" href="blog.html">Blog</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="about.html">About Us</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="privacy.html">Privacy Policy</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="dmca.html">DMCA</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <div class="container">
+         <div class="search-panel">
+            <br>
+            <h1>Free Unique Article Generator from YouTube Videos</h1>
+            <br>
+            <label for="usr">Enter YouTube Video URL </label>
+            <input type="text" class="form-control" id="query">
+            <br>
+            <button onclick="getYouTubeInfo(); getKeywords(); setTimeout(showWords, 800); search();" type="button" class="btn btn-dark">Generate Article</button>
+            <br>
+            <br>
+            <h2>How to create Unique Article from Youtube Videos?</h2>
+            <br>
+            <p> <strong>Step 1 -</strong> First of all go to YouTube website or APP ,search for your blog releted content videos and then apply filter in search list for <strong>Subtitles/CC</strong> .It will bring you only videos that have subtitles.</p>
+            <br>
+            <p> <strong>Step 2 -</strong> Bring your youtube video url to our website <a href="http://freearticlegenerator.in">(Free Article Generator)</a> and then paste your link in Box. And Press Generate Article button.</p>
+            <br>
+            <p> <strong>Step 3 -</strong> Your Article with Title and Description Will be generated in 1 second, it will show article total word count on top bar. Now you can Copy full article or download Full Article in .txt file format in your PC or in Smartphone.</p>
+            <br>
+            <p> <strong>Thats All !! Enjoy Blogging</strong> </p>
+         </div>
+         <div class="row">
+            <div class="col-10">
+               <div class="content" style="opacity:1">
+                  <h1 id="title" style="align:center"></h1>
+                  <button onclick="copyToClipboard('#content')" type="button" class="btn btn-dark">Copy Full Article</button>
+                  <button onclick="exportHTML()" type="button" class="btn btn-dark">Download Full Article in .doc File</button>
+                  <br>
+                  <div class="alert alert-success alert-dismissable">
+                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                     Copied successfully.
+                  </div>
+                  <br>
+                  <div id="mainBody">
+                  <div class="card text-white bg-dark">
+                     <div class="card-header">
+                        <h5> - Article Title -</h5>
+                     </div>
+                     <div id="main" class="card-body">
+                        <h4 id="titlen"> Title </h4>
+                     </div>
+                  </div>
+                  <br>
+                  <div class="card text-white bg-dark">
+                     <div class="card-header">
+                        <h5> - Suggested Keywords -</h5>
+                     </div>
+                     <div id="main" class="card-body">
+                        <!--<h3 id="keyword"> keywords </h3>-->
+                        <div id="tgs"></div>
+                     </div>
+                  </div>
+                  <br>
+                  <div class="card text-white bg-dark">
+                     <div class="card-header">
+                        <h5 id="words">Words</h5>
+                     </div>
+                     <div id="main" class="card-body">
+                        <h5> - Unique Article -</h5>
+                        <p id="content">
+                           Your Article Will be here...
+                        </p>
+                     </div>
+                  </div>
+                  <br>
+                  <div class="card text-white bg-dark">
+                     <div class="card-header">
+                        <h5> - Image -</h5>
+                     </div>
+                     <div id="main" class="card-body">
+                        <img id="myImg" src="feather.png" width="100%" height=auto>
+                     </div>
+                  </div>
+                  <br>
+                  <div class="card text-white bg-dark">
+                     <div class="card-header">
+                        <h5> - Video Description -</h5>
+                     </div>
+                     <div id="main" class="card-body">
+                        <p id="description"></p>
+                     </div>
+                  </div>
+                  <br>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <br>
+                  <a href='https://www.free-counters.org/'>dmtechnolab</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=7c0261ebefc1cff45bd7746a0553800579dbbe2c'></script>
+<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/746865/t/5"></script>
+         <br><br>
+      </div>
+      <!--<div class="col-2">-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--</div>-->
+   </body>
+</html>
